@@ -8,5 +8,6 @@ echo "Query: $query"
 echo "Subject: $subject"
 echo "Output: $output"
 
-tblastn -query "$query" -subject "$subject" -outfmt '6 std qlen'
+tblastn -query "$query" -subject "$subject" -outfmt '6 std qlen' > $output
+
 
